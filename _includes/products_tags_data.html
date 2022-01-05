@@ -1,0 +1,11 @@
+
+
+    {%- assign arrProductos = site.data.products.products.arr_products -%}
+    {%- assign arrTags = site.data.products.tags.arr_tags -%}
+
+    {%- assign tagsActuales = arrProductos | where: "tags_id" , page.tags -%}
+
+    
+    {%- for productos in tagsActuales -%}
+        {% include products_card.html %}
+    {%- endfor -%}

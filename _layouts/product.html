@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col-12 col-md-7 col-lg-8">
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+
+                    <div class="col-12">
+                        <h1 class="post-title">{{ page.title | escape }}</h1>
+                    </div>
+                    
+                    {{ content }}
+
+                </div>
+            </div>
+        </div>
+        {% include products_sidebar.html %}
+    </div>
+</div>

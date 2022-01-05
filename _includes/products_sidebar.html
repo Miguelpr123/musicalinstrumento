@@ -1,5 +1,18 @@
+
+ 
+    {%- assign arrProductos = site.data.products.products.arr_products -%}
+
+    {%- assign arrCategorias = site.data.products.categories.arr_categories -%}
+    {%- assign arrTags = site.data.products.tags.arr_tags -%}
+
+    {%- assign categoriaActual = arrProductos | where: "category_id" , page.categories -%}
+    {%- assign tagsActuales = arrProductos | where: "tags_id" , page.tags -%}
+
+
 <div class="col-12 col-md-5 col-lg-4 mt-4 mt-md-0">
-    <div class="card bg-dark" >
+
+    {% comment %} CATEGORIES {% endcomment %}
+    <div class="card bg-dark shadow my-3" >
         <div class="card-header bg-dark">
             <h1 class="text-light p-2 rounded" style="background-color: rgb(58, 45, 45);" >Categor&iacute;as</h1>
         </div>
@@ -18,4 +31,27 @@
     
         {%- endfor -%}
     </div>
+
+
+    {% comment %} TAGS {% endcomment %}
+    <div class="card bg-dark shadow my-3" >
+        <div class="card-header bg-dark">
+            <h1 class="text-light p-2 rounded" style="background-color: rgb(58, 45, 45);" >Etiquetas</h1>
+        </div>
+        {%- for tags in arrTags -%}
+            
+            {%- if tags.tag_name == "all" -%}
+                <p class="px-3" >
+                    <a href="{{site.base_url}}/productos/tags/" class="text-warning" >{{tags.tag_name}}</a>                    
+                </p>
+                {%- else -%}
+                <p class="px-3" >
+                    <a href="{{site.base_url}}/productos/tags/{{tags.tag_name}}" class="text-warning" >{{tags.tag_name}}</a>                    
+                </p>                        
+            {%- endif -%}
+                
+    
+        {%- endfor -%}
+    </div>
+
 </div>
