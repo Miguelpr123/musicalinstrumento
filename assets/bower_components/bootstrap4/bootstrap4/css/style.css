@@ -1,0 +1,60 @@
+* {
+    padding : 0;
+    margin : 0;
+	-webkit-box-sizing :border-box ;
+	-moz-box-sizing :border-box ;
+	-o-box-sizing :border-box ;
+	box-sizing :border-box ;
+	outline :0;
+}
+
+body {
+    background : white;
+    color : black;
+}
+
+.bg1{
+	background :#d2b48c;
+	text-align:center;
+}
+
+.bg2{
+	background :#ce852a;
+	text-align:center;
+}
+
+.bg3{
+	background :#4682b4;
+	text-align:center;
+}
+
+.bg4{
+	background :#ffe4b1;
+	text-align:center;
+}
+
+button.navbar-toggler {
+	outline :0;
+}
+
+button.close {
+	outline :0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

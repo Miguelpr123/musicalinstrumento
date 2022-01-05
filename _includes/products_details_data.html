@@ -1,0 +1,28 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-7 col-lg-8">
+            <div class="container-fluid">
+                <div class="row">
+
+                    {%- assign arrProductos = site.data.products.products.arr_products -%}
+                    {%- assign arrCategorias = site.data.products.categories.arr_categories -%}
+
+                    {%- assign categoriaActual = arrProductos | where: "category_id" , page.categories -%}
+
+                    {%- assign productoActual = arrProductos | where: "identifier" , page.identifier -%}
+
+                    {%- for productos in productoActual -%}
+
+                        {% include product_details_card.html %}
+
+                    {%- endfor -%}
+
+                </div>
+            </div>
+        </div>
+        
+        {% include products_sidebar.html %}
+
+    </div>
+</div>

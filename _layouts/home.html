@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<div class="container-fluid" >
+  <div class="row">
+
+    <div class="col-12">
+      {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+    </div>
+
+    <div class="col-12">
+      {{ content }}
+    </div>
+
+    <div class="col-6">
+      {% comment %} POSTS {% endcomment %}
+
+      {%- if site.posts.size > 0 -%}
+        <h2 >{{ page.list_title | default: "Posts" }}</h2>
+
+        {%- for post in site.posts limit: 6 -%}
+          <div class="d-flex justify-content-start align-items-center my-2 " >
+      
+              {%- if post.image -%}
+                <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image">
+              {%- else -%}
+                {%- assign postImage = "" -%}
+                <img src="{{- postImage | relative_url -}}" alt="" class="blog-roll-image">
+              {%- endif -%}
+              
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <div>
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </div>
+    
+            </div>
+          {%- endfor -%}
+
+    
+        {%- endif -%}
+    </div>
+
+    <div class="col-6">
+      {% comment %} PRODUCTS {% endcomment %}
+        
+      {%- assign arrProductos = site.data.products.products.arr_products -%}
+      {%- if arrProductos.size > 0 -%}
+        <h2 >{{ page.list_title | default: "Productos" }}</h2>
+
+          {%- for product in arrProductos limit: 6 -%}
+            <div class="d-flex justify-content-start align-items-center my-2 " >
+
+              {%- if product.image -%}
+                <img src="{{- product.image | relative_url -}}" alt="" class="blog-roll-image">
+              {%- else -%}
+                {%- assign productImage = "" -%}
+                <img src="{{- productImage | relative_url -}}" alt="" class="blog-roll-image">
+              {%- endif -%}
+              
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <div>
+                <span class="post-meta">{{ product.date | date: date_format }}</span>
+                <h3>
+                  <a class="post-link" href="{{ product.url | relative_url }}">
+                    {{ product.title | escape }}
+                  </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                  {{ product.excerpt }}
+                {%- endif -%}
+              </div>
+
+            </div>
+          {%- endfor -%}
+
+      {%- endif -%}
+    </div>
+
+  </div>
+</div>
+
+  
+
+    {% comment %} <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> {% endcomment %}
+  
+
+
+
+

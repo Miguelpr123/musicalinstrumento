@@ -1,0 +1,48 @@
+{
+    "arr_products":[
+        {
+            "identifier": "producto-1",
+            "title": "Producto 1",
+            "excerpt":"bnrjbnjr",
+            "description":"fjdnvjnv",
+            "image":"assets/images/chess-6521465_1920.jpg",
+            "valoracion": 4.5,
+            "price": 30.99,
+            "category_id": [0,1],
+            "date":"2022-01-03 10:02:57 -0500"
+        },
+        {
+            "identifier": "producto-2",
+            "title": "Producto 2",
+            "excerpt":"bnrjbnjr",
+            "description":"fjdnvjnv",
+            "image":"assets/images/chess-6521465_1920.jpg",
+            "valoracion": 4.5,
+            "price": 30.99,
+            "category_id":[0,2],
+            "date":"2022-01-03 10:02:57 -0500"
+        },
+        {
+            "identifier": "producto-3",
+            "title": "Producto 3",
+            "excerpt":"bnrjbnjr",
+            "description":"fjdnvjnv",
+            "image":"assets/images/chess-6521465_1920.jpg",
+            "valoracion": 4.5,
+            "price": 30.99,
+            "category_id":[0,1],
+            "date":"2022-01-03 10:02:57 -0500"
+        },
+        {
+            "identifier": "producto-4",
+            "title": "Producto 4",
+            "excerpt":"bnrjbnjr",
+            "description":"fjdnvjnv",
+            "image":"assets/images/chess-6521465_1920.jpg",
+            "valoracion": 4.5,
+            "price": 30.99,
+            "category_id":[0,2],
+            "date":"2022-01-03 10:02:57 -0500"
+        }
+    ] 
+}

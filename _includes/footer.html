@@ -1,0 +1,53 @@
+<div class="container border-top py-5">
+  <div class="row justify-content-center">
+
+    <div class="col-3 p-3 d-flex flex-column align-items-center" >
+      <data class="u-url" href="{{ "/" | relative_url }}"></data>
+      <h2 class="footer-heading">{{ site.title | escape }}</h2>
+      <div>
+        {%- if site.author -%}
+          <p>
+            {{ site.author | escape }}
+          </p>
+        {%- endif -%}        
+        {%- if site.email -%}
+          <p>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </p>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+      {%- if site.github_username -%}
+        <li class="list-unstyled" >
+          <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="d-flex align-items-center" >
+            <svg class="svg-icon">
+              <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
+            </svg> 
+            <span class="username">{{ site.github_username| escape }}</span>
+          </a>
+        </li>
+      {%- endif -%}
+  
+    </div>
+
+    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+      <p class="text-muted" >{{- site.description | escape -}}</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

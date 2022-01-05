@@ -1,0 +1,16 @@
+{
+    "arr_categories":[
+        {
+            "id":0,
+            "category_name": "all"
+        },
+        {
+            "id":1,
+            "category_name": "hdd"
+        },
+        {
+            "id":2,
+            "category_name": "cables"
+        }
+    ]
+}
