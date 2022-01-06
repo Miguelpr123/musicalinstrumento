@@ -20,11 +20,11 @@
             
             {%- if categorias.category_name == "all" -%}
                 <p class="px-3" >
-                    <a href="{{site.base_url}}/productos/categories/" class="text-warning" >{{categorias.category_name}}</a>                    
+                    <a href="{{site.url}}{{site.baseurl}}/productos/categories/" class="text-warning" >{{categorias.category_name}}</a>                    
                 </p>
                 {%- else -%}
                 <p class="px-3" >
-                    <a href="{{site.base_url}}/productos/categories/{{categorias.category_name}}" class="text-warning" >{{categorias.category_name}}</a>                    
+                    <a href="{{site.url}}{{site.baseurl}}/productos/categories/{{categorias.category_name}}" class="text-warning" >{{categorias.category_name}}</a>                    
                 </p>                        
             {%- endif -%}
                 
@@ -42,11 +42,11 @@
             
             {%- if tags.tag_name == "all" -%}
                 <p class="px-3" >
-                    <a href="{{site.base_url}}/productos/tags/" class="text-warning" >{{tags.tag_name}}</a>                    
+                    <a href="{{site.url}}{{site.baseurl}}/productos/tags/" class="text-warning" >{{tags.tag_name}}</a>                    
                 </p>
                 {%- else -%}
                 <p class="px-3" >
-                    <a href="{{site.base_url}}/productos/tags/{{tags.tag_name}}" class="text-warning" >{{tags.tag_name}}</a>                    
+                    <a href="{{site.url}}{{site.baseurl}}/productos/tags/{{tags.tag_name}}" class="text-warning" >{{tags.tag_name}}</a>                    
                 </p>                        
             {%- endif -%}
                 
