@@ -71,8 +71,8 @@ layout: default
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <div>
                 <span class="post-meta">{{ product.date | date: date_format }}</span>
-                <h3>
-                  <a class="post-link" href="{{ product.url | relative_url }}">
+                <h3>                  
+                  <a class="post-link" href="{{site.url}}{{site.baseurl}}/productos/details/{{productos.identifier}}">
                     {{ product.title | escape }}
                   </a>
                 </h3>
