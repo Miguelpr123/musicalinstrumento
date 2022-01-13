@@ -1,15 +1,20 @@
 <div class="col-12 col-md-6 col-lg-4 my-2">
-    <div class="card shadow">
-        <div class="card-body p-2 border-0">
+    <div class="card border-0">
+        <div class="card-body p-2 ">
             <div class="card-image">
-                <a href="{{site.url}}{{site.baseurl}}/productos/details/{{productos.identifier}}" ><img src="{{productos.image | relative_url }}" class="rounded" alt=""></a>
+                <a href="{{site.url}}{{site.baseurl}}/productos/details/{{productos.identifier}}" ><img src="{{productos.image | relative_url }}" class="img" alt=""></a>
             </div>
-            <div class="card-title">
-                <h3><a href="{{site.url}}{{site.baseurl}}/productos/details/{{productos.identifier}}" >{{productos.title}}</a></h3>
-            </div>
-            <div class="card-content">
-                <small class="text-muted" >{{productos.excerpt}}</small>
-                <p class="my-2" ><span class="p-1 bg-warning" ><em>&dollar;{{productos.price}}</em></span></p>
+            <div class="m-0 ml-1 mt-2">
+                <strong><a href="{{site.url}}{{site.baseurl}}/productos/details/{{productos.identifier}}" class="text-dark" >{{productos.title}}</a></strong>
+                <div class="mb-2" >
+                    {% include products_valoraciones_convert_img.html %}
+                </div>
+                <div class="w-100 d-flex justify-content-start align-items-end" >
+                    <strong class="p-1" >&dollar;{{productos.price}}</strong>
+                    {%- if productos.old_price -%}
+                        <small class="p-1 text-muted" ><del>&dollar;{{productos.old_price}}</del></small>
+                    {%- endif -%}                        
+                </div>
             </div>
         </div>
     </div>

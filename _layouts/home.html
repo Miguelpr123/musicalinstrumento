@@ -26,9 +26,6 @@ layout: default
       
               {%- if post.image -%}
                 <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image">
-              {%- else -%}
-                {%- assign postImage = "" -%}
-                <img src="{{- postImage | relative_url -}}" alt="" class="blog-roll-image">
               {%- endif -%}
               
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

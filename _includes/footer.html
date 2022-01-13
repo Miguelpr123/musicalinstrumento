@@ -1,7 +1,7 @@
 <div class="container border-top py-5">
   <div class="row justify-content-center">
 
-    <div class="col-3 p-3 d-flex flex-column align-items-center" >
+    <div class="col-12 col-md-5 col-lg-3 p-3 d-flex flex-column align-items-center" >
       <data class="u-url" href="{{ "/" | relative_url }}"></data>
       <h2 class="footer-heading">{{ site.title | escape }}</h2>
       <div>
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+    <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center justify-content-center">
       {%- if site.github_username -%}
         <li class="list-unstyled" >
           <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="d-flex align-items-center" >
@@ -32,7 +32,7 @@
   
     </div>
 
-    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+    <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center justify-content-center">
       <p class="text-muted" >{{- site.description | escape -}}</p>
     </div>
 
