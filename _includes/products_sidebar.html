@@ -9,10 +9,10 @@
     {%- assign tagsActuales = arrProductos | where: "tags_id" , page.tags -%}
 
 
-<div class="col-12 col-md-5 col-lg-4 mt-4 mt-md-0">
+<div class="col-12 col-md-5 col-lg-4 mt-4 mt-md-0"> 
 
     {% comment %} CATEGORIES {% endcomment %}
-    <div class="card shadow my-3" >
+    <div class="card shadow my-3 border-0" data-aos="fade-up" data-aos-delay="300" >
         <div class="card-header bg-white mb-3 ">
             <h3 class="p-2 rounded" ><strong>Categor&iacute;as</strong></h3>
         </div>
@@ -34,24 +34,26 @@
 
 
     {% comment %} TAGS {% endcomment %}
-    <div class="card shadow my-3" >
+    <div class="card shadow my-3 border-0" data-aos="fade-up" data-aos-delay="400" >
         <div class="card-header bg-white mb-3 ">
             <h3 class="p-2 rounded" ><strong>Etiquetas</strong></h3>
         </div>
-        {%- for tags in arrTags -%}
-            
-            {%- if tags.tag_name == "all" -%}
-                <p class="px-3" >
-                    <a href="{{site.url}}{{site.baseurl}}/productos/tags/" class="text-dark" >{{tags.tag_name}}</a>                    
-                </p>
-                {%- else -%}
-                <p class="px-3" >
-                    <a href="{{site.url}}{{site.baseurl}}/productos/tags/{{tags.tag_name}}" class="text-dark" >{{tags.tag_name}}</a>                    
-                </p>                        
-            {%- endif -%}
+        <div class="d-flex" >
+            {%- for tags in arrTags -%}
                 
-    
-        {%- endfor -%}
+                {%- if tags.tag_name == "all" -%}
+                    <div class="px-4 py-2 m-2" style="border:solid 1px rgb(110, 101, 101);" >
+                        <a href="{{site.url}}{{site.baseurl}}/productos/tags/" class="text-dark" >{{tags.tag_name}}</a>
+                    </div>
+                    {%- else -%}
+                    <div class="px-4 py-2 m-2" style="border:solid 1px rgb(110, 101, 101);" >
+                        <a href="{{site.url}}{{site.baseurl}}/productos/tags/{{tags.tag_name}}" class="text-dark" >{{tags.tag_name}}</a>                    
+                    </div>
+                {%- endif -%}
+                    
+        
+            {%- endfor -%}
+        </div>
     </div>
 
 </div>

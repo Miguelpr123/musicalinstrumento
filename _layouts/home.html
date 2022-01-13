@@ -7,7 +7,7 @@ layout: default
 
     <div class="col-12">
       {%- if page.title -%}
-        <h1 class="page-heading">{{ page.title }}</h1>
+        <h1 class="page-heading" data-aos="fade-up" >{{ page.title }}</h1>
       {%- endif -%}
     </div>
 
@@ -22,22 +22,24 @@ layout: default
         <h2 >{{ page.list_title | default: "Posts" }}</h2>
 
         {%- for post in site.posts limit: 6 -%}
-          <div class="d-flex justify-content-start align-items-center my-2 " >
+          <div class="d-flex justify-content-start align-items-center my-2 " data-aos="fade-up" >
       
               {%- if post.image -%}
-                <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image">
+                <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image" data-aos="fade-up" data-aos-delay="100" >
               {%- endif -%}
               
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <div>
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3>
+                <span class="post-meta" data-aos="fade-up" data-aos-delay="150" >{{ post.date | date: date_format }}</span>
+                <h3 data-aos="fade-up" data-aos-delay="200" >
                   <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                   </a>
                 </h3>
                 {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
+                  <span data-aos="fade-up" data-aos-delay="250" >
+                    {{ post.excerpt }}
+                  </span>
                 {%- endif -%}
               </div>
     
@@ -53,13 +55,13 @@ layout: default
         
       {%- assign arrProductos = site.data.products.products.arr_products -%}
       {%- if arrProductos.size > 0 -%}
-        <h2 >{{ page.list_title | default: "Productos" }}</h2>
+        <h2 data-aos="fade-up" data-aos-delay="50">{{ page.list_title | default: "Productos" }}</h2>
 
           {%- for product in arrProductos limit: 6 -%}
-            <div class="d-flex justify-content-start align-items-center my-2 " >
+            <div class="d-flex justify-content-start align-items-center my-2 " data-aos="fade-up" >
 
               {%- if product.image -%}
-                <img src="{{- product.image | relative_url -}}" alt="" class="blog-roll-image">
+                <img src="{{- product.image | relative_url -}}" alt="" class="blog-roll-image" data-aos="fade-up" data-aos-delay="100" >
               {%- else -%}
                 {%- assign productImage = "" -%}
                 <img src="{{- productImage | relative_url -}}" alt="" class="blog-roll-image">
@@ -67,14 +69,16 @@ layout: default
               
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <div>
-                <span class="post-meta">{{ product.date | date: date_format }}</span>
-                <h3>                  
+                <span class="post-meta" data-aos="fade-up" data-aos-delay="150" >{{ product.date | date: date_format }}</span>
+                <h3 data-aos="fade-up" data-aos-delay="200" >                  
                   <a class="post-link" href="{{site.url}}{{site.baseurl}}/productos/details/{{productos.identifier}}">
                     {{ product.title | escape }}
                   </a>
                 </h3>
                 {%- if site.show_excerpts -%}
-                  {{ product.excerpt }}
+                  <span data-aos="fade-up" data-aos-delay="250" >
+                    {{ product.excerpt }}
+                  </span>
                 {%- endif -%}
               </div>
 

@@ -1,14 +1,20 @@
-<div class="col-12 col-md-6 col-lg-4 my-2">
+<div class="col-12 col-md-6 col-lg-4 my-2" data-aos="fade-up" >
     <div class="card shadow border-0">
         <div class="card-body p-2">
-            <div class="card-image">
-                <a href="{{posts.url | relative_url }}" ><img src="{{posts.image | relative_url }}" class="rounded" alt=""></a>
-            </div>
+            {%- if posts.image -%}  
+                <div class="card-image">
+                    <a href="{{posts.url | relative_url }}" ><img src="{{posts.image | relative_url }}" class="rounded" data-aos="fade-up" data-aos-delay="100" alt=""></a>
+                </div>
+            {%- endif -%}
             <div class="card-title">
-                <h3><a href="{{posts.url | relative_url }}" >{{posts.title}}</a></h3>
+                <h3 data-aos="fade-up" data-aos-delay="150" >
+                    <a href="{{posts.url | relative_url }}" class="text-dark" >{{posts.title}}</a> 
+                </h3>
             </div>
             <div class="card-content">
-                <small class="text-muted" >{{posts.excerpt}}</small>
+                <p class="my-2" style="font-size: 120%; font-weight: 100;" >{{posts.excerpt}}</p>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <small class="text-muted" data-aos="fade-up" data-aos-delay="200" >{{posts.date | date: date_format }}</small>
             </div>
         </div>
     </div>
