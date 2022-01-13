@@ -1,5 +1,5 @@
 <div class="col-12 my-3">
-    <div class="card shadow border-0">
+    <div class="card border-0">
         <div class="card-body p-2 ">
             <div class="card-image">
                 <a href="{{productos.url | relative_url }}" ><img src="{{productos.image | relative_url }}" class="rounded" alt=""></a>
@@ -11,8 +11,14 @@
                 <small class="text-muted" >{{productos.excerpt}}</small>
                 <p>{{productos.description}}</p>
                 <span>{% include products_valoraciones_convert_img.html %}</span>
+                <div class="my-1" >
+                    <strong class="p-1" >{{productos.price}}<sup>&euro;</sup></strong>
+                    {%- if productos.old_price -%}
+                        <small class="p-1 text-muted" ><del>{{productos.old_price}}<sup>&euro;</sup></del></small>
+                    {%- endif -%}
+                </div>
                 <div>
-                    <p class="my-2" ><span class="p-1 bg-warning" ><em>&dollar;{{productos.price}}</em></span></p>
+                    <a href="{{productos.url | relative_url }}" class="btn btn-success text-white" >Comprar Producto</a>
                 </div>
             </div>
         </div>

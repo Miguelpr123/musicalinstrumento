@@ -10,9 +10,9 @@
                     {% include products_valoraciones_convert_img.html %}
                 </div>
                 <div class="w-100 d-flex justify-content-start align-items-end" >
-                    <strong class="p-1" >&dollar;{{productos.price}}</strong>
+                    <strong class="p-1" >{{productos.price}}<sup>&euro;</sup></strong>
                     {%- if productos.old_price -%}
-                        <small class="p-1 text-muted" ><del>&dollar;{{productos.old_price}}</del></small>
+                        <small class="p-1 text-muted" ><del>{{productos.old_price}}<sup>&euro;</sup></del></small>
                     {%- endif -%}                        
                 </div>
             </div>
