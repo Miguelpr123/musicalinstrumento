@@ -1,16 +1,16 @@
-<div class="col-12 ">
+<div class="col-12 my-3">
     <div class="card shadow border-0">
         <div class="card-body p-2 ">
             <div class="card-image">
-                <img src="{{productos.image | relative_url }}" class="rounded" alt="">
+                <a href="{{productos.url | relative_url }}" ><img src="{{productos.image | relative_url }}" class="rounded" alt=""></a>
             </div>
             <div class="card-title">
-                <h3>{{productos.title}}</h3>
+                <h3><a href="{{productos.url | relative_url }}" class="text-dark" >{{productos.title}}</a></h3>
             </div>
             <div class="card-content">
                 <small class="text-muted" >{{productos.excerpt}}</small>
                 <p>{{productos.description}}</p>
-                <span>{{productos.valoracion}}</span>
+                <span>{% include products_valoraciones_convert_img.html %}</span>
                 <div>
                     <p class="my-2" ><span class="p-1 bg-warning" ><em>&dollar;{{productos.price}}</em></span></p>
                 </div>

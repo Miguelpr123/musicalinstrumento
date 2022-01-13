@@ -7,18 +7,6 @@
         {
             "id":1,
             "tag_name": "destacados"
-        },
-        {
-            "id":2,
-            "tag_name": "men"
-        },
-        {
-            "id":3,
-            "tag_name": "fashion"
-        },
-        {
-            "id":4,
-            "tag_name": "hot"
         }
     ]
 }

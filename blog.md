@@ -1,4 +1,4 @@
----
+{% comment %} ---
 layout: page
 title: Blog
 permalink: /blog/
@@ -18,7 +18,7 @@ permalink: /blog/
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 
 
 

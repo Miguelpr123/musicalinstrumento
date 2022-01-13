@@ -1,56 +1,24 @@
 {
     "arr_products":[
         {
-            "identifier": "producto-1",
-            "title": "Producto 1",
-            "excerpt":"bnrjbnjr",
-            "description":"fjdnvjnv",
-            "image":"assets/images/chess-6521465_1920.jpg",
-            "valoracion": 4.5,
-            "price": 30.99,
-            "old_price":40.99,
+            "identifier": "NAVARRA-NV12PK",
+            "url":"https://amzn.to/3nn5aYu",
+            "title": "NAVARRA NV12PK",
+            "excerpt":"Starter Set guitarra clásica 4/4 negro, bolsa/Gig Bag, libro con CD, afinador (tuner),2 púas",
+            "description":"Acerca de este producto
+            Tapa negro, fondo y aros negros, bordes crema
+            Diapasón y puente negro, trastes de latón, estable, clavijeros niquelados
+            Escala 650 mm
+            Ancho cejuela 52 mm, trastes marcadores en el 3/5/7/9/12
+            Incluye funda con correas tipo mochila y bolsillo para partituras/accesorios, libro con muchos hit-canciones y CD, cliptuner pantalla LCD de aguja con iluminación de fondo, 2 Púa
+            ",
+            "image":"assets/images/products/51SFd-3GUPL._AC_SL1000_.jpg",
+            "valoracion": 4,
+            "price": 80.00,
+            // "old_price":40.99,
             "category_id": [0,1],
-            "tags_id":[0,2,4,1],
-            "date":"2022-01-03 10:02:57 -0500"
-        },
-        {
-            "identifier": "producto-2",
-            "title": "Producto 2",
-            "excerpt":"bnrjbnjr",
-            "description":"fjdnvjnv",
-            "image":"assets/images/chess-6521465_1920.jpg",
-            "valoracion": 4.5,
-            "price": 30.99,
-            "old_price":40.99,
-            "category_id":[0,2],
-            "tags_id":[0,3,1],
-            "date":"2022-01-03 10:02:57 -0500"
-        },
-        {
-            "identifier": "producto-3",
-            "title": "Producto 3",
-            "excerpt":"bnrjbnjr",
-            "description":"fjdnvjnv",
-            "image":"assets/images/chess-6521465_1920.jpg",
-            "valoracion": 4.5,
-            "price": 30.99,
-            "old_price":40.99,
-            "category_id":[0,1],
-            "tags_id":[0,4,3],
-            "date":"2022-01-03 10:02:57 -0500"
-        },
-        {
-            "identifier": "producto-4",
-            "title": "Producto 4",
-            "excerpt":"bnrjbnjr",
-            "description":"fjdnvjnv",
-            "image":"assets/images/chess-6521465_1920.jpg",
-            "valoracion": 4.5,
-            "price": 30.99,
-            "old_price":40.99,
-            "category_id":[0,2],
-            "tags_id":[0,2,1],
-            "date":"2022-01-03 10:02:57 -0500"
+            "tags_id":[0,1],
+            "date":"2022-01-12 21:52:57 -0500"
         }
     ] 
 }
