@@ -19,6 +19,26 @@
             "category_id": [0,1],
             "tags_id":[0,1],
             "date":"2022-01-12 21:52:57 -0500"
+        },
+        {
+            "identifier": "3rd-Avenue-STX20CRBPK",
+            "url":"https://amzn.to/3fAfjNj",
+            "title": "3rd Avenue STX20CRBPK",
+            "excerpt":"Paquete de guitarra clásica de tamaño 3/4, Rojo (Redburst), Paquete",
+            "description":"Acerca de este producto
+            Pack de guitarra clásica de 3/4, optimo para los músicos jóvenes que desean iniciarse en este instrumento
+            Incluye una funda, cuerdas de repuesto y un afinador
+            Cuerdas de nylon que resultan suaves al contacto con los dedos de los músicos jóvenes
+            Acabado en brillo con un diseño atractivo alrededor de la boca
+            Pack de guitarra al optimo precio para principiantes",
+            "image":"assets/images/products/81OnTKyVhXL._AC_SL1500_.jpg",
+            "valoracion": 4,
+            "price": 51.94,
+            // "old_price":40.99,
+            "category_id": [0,1],
+            "tags_id":[0,1],
+            "date":"2022-01-12 22:22:57 -0500"
         }
     ] 
 }
+
