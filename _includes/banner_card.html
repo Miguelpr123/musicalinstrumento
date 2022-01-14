@@ -1,0 +1,11 @@
+<div class="col-12 col-md-6 col-lg-4 my-2 order-first" data-aos="fade-up" >
+    <div class="card shadow border-0">
+        <div class="card-body p-2 d-flex justify-content-center">
+            {%- assign arrBanners = site.data.prime.banners.arr_banners -%}
+
+            {%- for banners in arrBanners -%}
+                <a href="http://www.amazon.es/prime?tag=musicalins09c-21" >{{ banners.html_code }}</a>
+            {%- endfor -%}
+        </div>
+    </div>
+</div> 

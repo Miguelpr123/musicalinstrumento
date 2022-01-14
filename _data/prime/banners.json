@@ -1,0 +1,9 @@
+{
+    "arr_banners":[
+        {
+            "id":1,
+            "banner_type":"Prime Video",
+            "html_code": "<iframe src='https://rcm-eu.amazon-adsystem.com/e/cm?o=30&p=22&l=ur1&category=prime_video&banner=13AGZ2WR14JSQE7P1402&f=ifr&linkID=bf430e9dfee752b46db58286c193cab2&t=musicalins09c-21&tracking_id=musicalins09c-21' width='250' height='250' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe>"
+        }
+    ]
+}

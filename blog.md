@@ -14,6 +14,8 @@ permalink: /blog/
                         {% include post_card.html %}                       
                     {%- endfor -%}
 
+                    {% include banner_card.html %}
+
                 </div>
             </div>
         </div>

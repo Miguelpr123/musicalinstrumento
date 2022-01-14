@@ -6,16 +6,22 @@
                     <a href="{{posts.url | relative_url }}" ><img src="{{posts.image | relative_url }}" class="rounded" data-aos="fade-up" data-aos-delay="100" alt=""></a>
                 </div>
             {%- endif -%}
+            {%- if posts.title -%}
             <div class="card-title">
                 <h3 data-aos="fade-up" data-aos-delay="150" >
                     <a href="{{posts.url | relative_url }}" class="text-dark" >{{posts.title}}</a> 
                 </h3>
             </div>
+            {%- endif -%}
+            {%- if posts.excerpt -%}
             <div class="card-content">
                 <p class="my-2" style="font-size: 120%; font-weight: 100;" >{{posts.excerpt}}</p>
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <small class="text-muted" data-aos="fade-up" data-aos-delay="200" >{{posts.date | date: date_format }}</small>
+                {%- if posts.excerpt -%}
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    <small class="text-muted" data-aos="fade-up" data-aos-delay="200" >{{posts.date | date: date_format }}</small>
+                {%- endif -%}
             </div>
+            {%- endif -%}
         </div>
     </div>
 </div> 
