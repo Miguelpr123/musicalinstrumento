@@ -19,7 +19,7 @@ layout: default
       {% comment %} POSTS {% endcomment %}
  
       {%- if site.posts.size > 0 -%}
-        <h2 >{{ page.list_title | default: "Posts" }}</h2>
+        <h2 data-aos="fade-up" data-aos-delay="50" >{{ page.list_title | default: "Posts" }}</h2>
 
         {%- for post in site.posts limit: 6 -%}
           <div class="d-flex justify-content-start align-items-center my-2 " data-aos="fade-up" >
