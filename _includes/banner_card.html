@@ -4,7 +4,7 @@
             {%- assign arrBanners = site.data.prime.banners.arr_banners -%}
 
             {%- for banners in arrBanners -%}
-                <a href="http://www.amazon.es/prime?tag=musicalins09c-21" >{{ banners.html_code }}</a>
+                {{ banners.html_code }}
             {%- endfor -%}
         </div>
     </div>
