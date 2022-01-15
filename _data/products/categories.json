@@ -7,6 +7,10 @@
         {
             "id":1,
             "category_name": "guitarras"
+        },
+        {
+            "id":2,
+            "category_name": "baterias"
         }
     ]
 }

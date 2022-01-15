@@ -38,21 +38,25 @@
         <div class="card-header bg-white mb-3 ">
             <h3 class="p-2 rounded" ><strong>Etiquetas</strong></h3>
         </div>
-        <div class="d-flex" >
-            {%- for tags in arrTags -%}
+        <div class="container-fluid" >
+            <div class="row" >
+                {%- for tags in arrTags -%}
+                    <div class="px-1 pb-2">
+                        
+                        {%- if tags.tag_name == "all" -%}
+                            <div class="text-center px-1 m-1 py-2 float-left" style="background-color: rgb(230, 240, 89);"  >
+                                <a href="{{site.url}}{{site.baseurl}}/productos/tags/" class="text-dark text-decoration-none" >{{tags.tag_title}}</a>
+                            </div>
+                            {%- else -%}
+                            <div class="text-center px-1 m-1 py-2 float-left" style="background-color: rgb(230, 240, 89);"  >
+                                <a href="{{site.url}}{{site.baseurl}}/productos/tags/{{tags.tag_name}}" class="text-dark text-decoration-none" >{{tags.tag_title}}</a>                    
+                            </div>
+                        {%- endif -%}
+                            
                 
-                {%- if tags.tag_name == "all" -%}
-                    <div class="px-4 py-2 m-2" style="border:solid 1px rgb(110, 101, 101);" >
-                        <a href="{{site.url}}{{site.baseurl}}/productos/tags/" class="text-dark" >{{tags.tag_name}}</a>
                     </div>
-                    {%- else -%}
-                    <div class="px-4 py-2 m-2" style="border:solid 1px rgb(110, 101, 101);" >
-                        <a href="{{site.url}}{{site.baseurl}}/productos/tags/{{tags.tag_name}}" class="text-dark" >{{tags.tag_name}}</a>                    
-                    </div>
-                {%- endif -%}
-                    
-        
-            {%- endfor -%}
+                {%- endfor -%}
+            </div>
         </div>
     </div>
 

@@ -2,11 +2,23 @@
     "arr_tags":[
         {
             "id":0,
-            "tag_name": "all"
+            "tag_name": "all",
+            "tag_title":"Todos"
         },
         {
             "id":1,
-            "tag_name": "destacados"
-        }
+            "tag_name": "destacados",
+            "tag_title":"Destacados"
+        },
+        {
+            "id":2,
+            "tag_name": "mas-vendidos",
+            "tag_title":"M&aacute;s Vendidos"
+        },
+        {
+            "id":3,
+            "tag_name": "flash-offert",
+            "tag_title":"Oferta R&aacute;pida"
+        }      
     ]
 }

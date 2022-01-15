@@ -38,7 +38,42 @@
             "category_id": [0,1],
             "tags_id":[0,1],
             "date":"2022-01-12 22:22:57 -0500"
-        }
+        },
+        {
+            "identifier": "bontempi-bateria",
+            "url":"https://amzn.to/3rkYwDk",
+            "title": "Bontempi-Batería",
+            "excerpt":"Batería de 6 elementos con taburete, +3 años",
+            "description":"Batería metalizada: bombo, 385 mm con pedal, 2 tambores, 170 mm, 1 tambor, 210 mm sobre soporte de suelo, “snare drum”, 236 mm sobre soporte de suelo, platillo, 210 mm, 2 baquetas, sonidos reales, con taburete, dim: 850x650x680 mm.",
+            "image":"assets/images/products/81ARrMgtSfL._AC_SL1500_.jpg",
+            "valoracion": 4,
+            "price": 54.80,
+            "old_price":64.27,
+            "category_id": [0,2],
+            "tags_id":[0,3],
+            "date":"2022-01-15 15:37:00 -0500"
+        },
+        {
+            "identifier": "alesis-nitro-mesh-kit",
+            "url":"https://amzn.to/3FwwGJa",
+            "title": "Alesis Nitro Mesh Kit",
+            "excerpt":"Batería Electrónica Musical de 8 Piezas con Parches de Malla, Rack Aluminio, 385 Sonidos, 60 Pistas para tocar, Baquetas, Cableado y llave de batería incluidos",
+            "description":"Acerca de este producto: 
+            Pads de malla de última generación - Todos los parches de los tambores son de malla para ofrecer una experiencia de interpretación más realista, receptiva e inmersiva que demanda el batería moderno
+            Configuración de alta calidad de 8 piezas - Caja dual de 8“, 3 parches de tom de 8” y 3 Platillos de 10“: plato ride, charles, crash con atenuación
+            Módulo Nitro Drum con 40 kits clásicos y modernos listos para tocar, 60 pistas de acompañamiento y más de 350 sonidos electrónicos y acústicos seleccionados por expertos
+            Potentes características educativas - 60 pistas de acompañamiento, secuenciador, metrónomo, entrada auxiliar y grabador de rendimiento ayudan a perfeccionar y desarrollar tus habilidades con el tambor
+            Todo lo que necesitas - Rack aluminio de 4 postes, cables de conexión, baquetas, llave de batería y fuente de alimentación incluidos
+            Clases de batería interactivas incluidas: 60 lecciones virtuales de Melodics gratis para que perfecciones tus virtudes en cualquier género o técnica que quieras dominar",
+            "image":"assets/images/products/71XiD79iD5L._AC_SL1500_.jpg",
+            "valoracion": 4.5,
+            "price": 379.00,
+            "old_price":399.99,
+            "category_id": [0,2],
+            "tags_id":[0,2],
+            "date":"2022-01-15 16:38:00 -0500"
+        },
+        
     ] 
 }
 
