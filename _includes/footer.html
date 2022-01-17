@@ -20,7 +20,7 @@
 
     <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center justify-content-center">
       {%- if site.github_username -%}
-        <li class="list-unstyled" >
+        <li class="list-unstyled my-2" >
           <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="d-flex align-items-center" >
             <svg class="svg-icon">
               <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center justify-content-center">
-      <p class="text-muted" >{{- site.description | escape -}}</p>
+      <p class="text-muted text-center my-3" >{{- site.description | escape -}}</p>
     </div>
 
   </div>

@@ -15,7 +15,7 @@ layout: default
       {{ content }}
     </div>
 
-    <div class="col-6">
+    <div class="col-12 col-md-6 my-3 my-md-0 ">
       {% comment %} POSTS {% endcomment %}
  
       {%- if site.posts.size > 0 -%}
@@ -23,10 +23,6 @@ layout: default
 
         {%- for post in site.posts limit: 6 -%}
           <div class="d-flex justify-content-start align-items-center my-2 " data-aos="fade-up" >
-      
-              {%- if post.videoyoutube -%}
-                <iframe width="100" height="100" src="{{- product.video-youtube -}}" class="blog-roll-image" title="Carolina Durante" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              {%- endif -%}
 
               {%- if post.image -%}
                 <img src="{{- post.image | relative_url -}}" alt="" class="blog-roll-image" data-aos="fade-up" data-aos-delay="100" >
@@ -54,7 +50,7 @@ layout: default
         {%- endif -%}
     </div>
 
-    <div class="col-6">
+    <div class="col-12 col-md-6 my-3 my-md-0 ">
       {% comment %} PRODUCTS {% endcomment %}
         
       {%- assign arrProductos = site.data.products.products.arr_products -%}
