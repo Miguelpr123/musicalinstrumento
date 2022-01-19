@@ -11,6 +11,18 @@
         {
             "id":2,
             "category_name": "baterias"
+        },
+        {
+            "id":3,
+            "category_name": "microfonos"
+        },
+        {
+            "id":4,
+            "category_name": "bajo_electrico"
+        },
+        {
+            "id":5,
+            "category_name": "violin"
         }
     ]
 }

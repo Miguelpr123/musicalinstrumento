@@ -19,6 +19,11 @@
             "id":3,
             "tag_name": "flash-offert",
             "tag_title":"Oferta R&aacute;pida"
+        },
+        {
+            "id":4,
+            "tag_name": "amazon-choice",
+            "tag_title":"Amazon's Choice"
         }      
     ]
 }
